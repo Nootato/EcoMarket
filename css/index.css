@@ -5,14 +5,15 @@
 }
 
 :root{
-    --purple: #c34a8b;
-    --purple_lowopacity: #c34a8b80;
-    --green: #8bc34a;
-    --blue: #4a8bc3;
+    --purple: #da7da7;
+    --purple_lowopacity: #da7da780;
+    /* --purple_medopacity: #da7da760; */
+    --green: #a7da7d;
+    --blue: #7da7da;
 }
 
-body {
-}
+/* body {
+} */
 
 header {
     display: grid;
@@ -28,15 +29,20 @@ h1 {
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
-    gap: 16px;
+    gap: 8px;
 }
 
 nav li {
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 nav li:hover {
-    color: var(--purple);
+    font-size: 18px;
+    background-color: var(--purple_lowopacity);
+    transform: translateY(1px);
 }
