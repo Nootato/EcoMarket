@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --purple: #c34a8b;
+    --purple_lowopacity: #c34a8b80;
+    --green: #8bc34a;
+    --blue: #4a8bc3;
+}
+
+body {
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--purple_lowopacity);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+nav li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav li:hover {
+    color: var(--purple);
+}
